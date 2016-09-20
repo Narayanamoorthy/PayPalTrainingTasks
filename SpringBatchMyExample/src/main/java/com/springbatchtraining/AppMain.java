@@ -21,7 +21,7 @@ public static void main(String[] args) {
 	JobExecution jobexcecution;
 	try {
 		jobexcecution = joblauncher.run(job, new JobParameters());
-		System.out.println("job name ::: " + job.getName() + "   job status :::" + jobexcecution.getStatus());
+		System.out.println("job name :::              " + job.getName() + "   job status :::" + jobexcecution.getStatus());
 		
 	} catch (JobExecutionAlreadyRunningException e) {
 		e.printStackTrace();
